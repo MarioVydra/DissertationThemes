@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DissertationThemes.ImporterApp": {
+      "commandName": "Project",
+      "commandLineArgs": "\"E:\\Skola\\Ing\\1. SEMESTER\\Pokrocile objektove technologie\\DissertationThemes\\DissertationThemes.ImporterApp\\phd_temy.csv\" --remove-previous-data"
+    }
+  }
+}

@@ -11,8 +11,17 @@ namespace DissertationThemes.SharedLibrary
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), ""MojaApp, ""as.db)
-            options.UseSqlite($"Data Source=Blogging.db");
+            var appDataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DissertationThemes");
+
+            if (!Directory.Exists(appDataPath)) 
+            {
+                Directory.CreateDirectory(appDataPath);    
+            }
+            var dbPath = Path.Combine(appDataPath, "DissertationThemes.db");
+
+            options.UseSqlite($"Data Source={dbPath}");
+            //Console.WriteLine(dbPath);
+            //options.UseSqlite($"Data Source=Blogging.db");
         }
     }
 }

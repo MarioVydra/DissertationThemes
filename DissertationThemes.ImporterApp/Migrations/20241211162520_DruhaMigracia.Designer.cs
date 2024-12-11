@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DissertationThemes.ImporterApp.Migrations
 {
     [DbContext(typeof(DissertationThemesContext))]
-    [Migration("20241112145424_initial")]
-    partial class initial
+    [Migration("20241211162520_DruhaMigracia")]
+    partial class DruhaMigracia
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
