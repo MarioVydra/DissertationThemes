@@ -1,0 +1,6 @@
+@DissertationThemes.WebApi_HostAddress = http://localhost:5026
+
+GET {{DissertationThemes.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

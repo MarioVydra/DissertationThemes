@@ -58,6 +58,9 @@ namespace DissertationThemes.ImporterApp
                         db.Themes.RemoveRange(db.Themes);
                         db.Supervisors.RemoveRange(db.Supervisors);
                         db.StProgram.RemoveRange(db.StProgram);
+                        db.Database.ExecuteSqlRaw("DELETE FROM sqlite_sequence WHERE name = 'StProgram';");
+                        db.Database.ExecuteSqlRaw("DELETE FROM sqlite_sequence WHERE name = 'Themes';");
+                        db.Database.ExecuteSqlRaw("DELETE FROM sqlite_sequence WHERE name = 'Supervisors';");
                         db.SaveChanges();
                         Console.WriteLine("Previous data was removed successfully.");
                     }
@@ -110,15 +113,13 @@ namespace DissertationThemes.ImporterApp
                         Console.WriteLine("Data imported successfully.");
                         //var themes = db.Themes.Include(t => t.Supervisor).Include(t => t.StProgram).ToList();
 
-                        //// Načítame všetkých školiteľov a programy
                         //var supervisors = db.Supervisors.ToList();
                         //var programs = db.StProgram.ToList();
 
-                        //// Zobrazenie tém
                         //Console.WriteLine("Témy:");
                         //foreach (var theme in themes)
                         //{
-                        //    // Pre každú tému zobrazíme názov, popis, výskumný typ a súvisiace entity
+                        //    Console.WriteLine($"Id: {theme.Id}");
                         //    Console.WriteLine($"Názov témy: {theme.Name}");
                         //    Console.WriteLine($"Popis: {theme.Description}");
                         //    Console.WriteLine($"Výskumný typ: {theme.ResearchType}");
@@ -127,14 +128,12 @@ namespace DissertationThemes.ImporterApp
                         //    Console.WriteLine();
                         //}
 
-                        //// Zobrazenie školiteľov (bez duplicitného zobrazenia)
                         //Console.WriteLine("Školitelia:");
                         //foreach (var supervisor in supervisors)
                         //{
                         //    Console.WriteLine($"Meno školiteľa: {supervisor.FullName}");
                         //}
 
-                        //// Zobrazenie programov (bez duplicitného zobrazenia)
                         //Console.WriteLine("\nProgramy:");
                         //foreach (var program in programs)
                         //{

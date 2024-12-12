@@ -20,8 +20,6 @@ namespace DissertationThemes.SharedLibrary
             var dbPath = Path.Combine(appDataPath, "DissertationThemes.db");
 
             options.UseSqlite($"Data Source={dbPath}");
-            //Console.WriteLine(dbPath);
-            //options.UseSqlite($"Data Source=Blogging.db");
         }
     }
 }

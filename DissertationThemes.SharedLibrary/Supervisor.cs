@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace DissertationThemes.SharedLibrary
+﻿namespace DissertationThemes.SharedLibrary
 {
     public class Supervisor
     {

@@ -11,14 +11,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DissertationThemes.ImporterApp.Migrations
 {
     [DbContext(typeof(DissertationThemesContext))]
-    [Migration("20241211162520_DruhaMigracia")]
-    partial class DruhaMigracia
+    [Migration("20241212161854_InitialMigracia")]
+    partial class InitialMigracia
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
 
             modelBuilder.Entity("DissertationThemes.SharedLibrary.StProgram", b =>
                 {

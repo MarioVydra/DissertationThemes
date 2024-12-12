@@ -18,5 +18,20 @@ namespace DissertationThemes.ImporterApp
                     throw new ArgumentException($"Invalid research type: {value}");
             }
         }
+
+        public static string ToSlovakString(ResearchType value)
+        {
+            switch (value)
+            {
+                case ResearchType.BasicResearch:
+                    return "základný výskum";
+                case ResearchType.AppliedResearch:
+                    return "aplikovaný výskum";
+                case ResearchType.AppliedResearchExpDevelopment:
+                    return "aplikovaný výskum a experimentálny vývoj";
+                default:
+                    throw new ArgumentException($"Invalid research type: {value}");
+            }
+        }
     }
 }
