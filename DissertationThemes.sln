@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DissertationThemes.Importer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DissertationThemes.WebApi", "DissertationThemes.WebApi\DissertationThemes.WebApi.csproj", "{4533610F-C9E5-4E20-ADC8-636C6A1B9CDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DissertationThemes.ViewerApp", "DissertationThemes.ViewerApp\DissertationThemes.ViewerApp.csproj", "{4A5A8752-5669-43F2-8A4B-4164F48C1690}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4533610F-C9E5-4E20-ADC8-636C6A1B9CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4533610F-C9E5-4E20-ADC8-636C6A1B9CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4533610F-C9E5-4E20-ADC8-636C6A1B9CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5A8752-5669-43F2-8A4B-4164F48C1690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5A8752-5669-43F2-8A4B-4164F48C1690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5A8752-5669-43F2-8A4B-4164F48C1690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5A8752-5669-43F2-8A4B-4164F48C1690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

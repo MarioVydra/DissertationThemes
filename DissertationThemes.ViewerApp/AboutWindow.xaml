@@ -1,0 +1,14 @@
+﻿<Window x:Class="DissertationThemes.ViewerApp.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="200" Width="300">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Dissertation Theme Viewer" FontWeight="Bold" FontSize="20" Margin="0,10" />
+            <TextBlock Text="Version 1.0"/>
+            <TextBlock Text="Author: Mário Vydra"/>
+            <Button Content="OK" Width="50" Click="Ok_Click" Margin="0,10" HorizontalAlignment="Right"/>
+        </StackPanel>
+    </Grid>
+</Window>

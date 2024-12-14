@@ -128,12 +128,15 @@ namespace DissertationThemes.WebApi.Services
                         csv.WriteRecord(themeRecord);
                         csv.NextRecord();
                     }
-                    writer.Flush();
                 }
                 return memoryStream.ToArray();
             }
 
         }
+
+        /**
+         * https://www.e-iceblue.com/Tutorials/Spire.Doc/Spire.Doc-Program-Guide/Spire.Doc-Program-Guide-Content.html?gad_source=1&gclid=Cj0KCQiA0--6BhCBARIsADYqyL8THqvvCafhiBubG5J5BUcRfNdFElwpQ403O_UNq_u0b-MjYRL-ROwaAp3wEALw_wcB
+         */
         public async Task<(byte[] fileContent, string fileName)> GenerateDocxforTheme(int id)
         {
             var theme = await context.Themes

@@ -111,34 +111,6 @@ namespace DissertationThemes.ImporterApp
                         }
 
                         Console.WriteLine("Data imported successfully.");
-                        //var themes = db.Themes.Include(t => t.Supervisor).Include(t => t.StProgram).ToList();
-
-                        //var supervisors = db.Supervisors.ToList();
-                        //var programs = db.StProgram.ToList();
-
-                        //Console.WriteLine("Témy:");
-                        //foreach (var theme in themes)
-                        //{
-                        //    Console.WriteLine($"Id: {theme.Id}");
-                        //    Console.WriteLine($"Názov témy: {theme.Name}");
-                        //    Console.WriteLine($"Popis: {theme.Description}");
-                        //    Console.WriteLine($"Výskumný typ: {theme.ResearchType}");
-                        //    Console.WriteLine($"Vedúci témy: {theme.Supervisor.FullName}");
-                        //    Console.WriteLine($"Program: {theme.StProgram.Name}");
-                        //    Console.WriteLine();
-                        //}
-
-                        //Console.WriteLine("Školitelia:");
-                        //foreach (var supervisor in supervisors)
-                        //{
-                        //    Console.WriteLine($"Meno školiteľa: {supervisor.FullName}");
-                        //}
-
-                        //Console.WriteLine("\nProgramy:");
-                        //foreach (var program in programs)
-                        //{
-                        //    Console.WriteLine($"Názov programu: {program.Name}, Obor: {program.FieldOfStudy}");
-                        //}
                     }
                 }
                 return 0;

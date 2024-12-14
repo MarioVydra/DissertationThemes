@@ -1,0 +1,56 @@
+﻿<Window x:Class="DissertationThemes.ViewerApp.DetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DissertationThemes.ViewerApp"
+        mc:Ignorable="d"
+        Title="Dissertation theme details" Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" Text="Id:" VerticalAlignment="Center" FontWeight="bold"/>
+        <TextBlock x:Name="IdTextBlock"  Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" Text="Name:" VerticalAlignment="Center" FontWeight="bold"/>
+        <TextBlock x:Name="NameTextBlock"  Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" Text="Supervisor:" VerticalAlignment="Center" FontWeight="bold"/>
+        <TextBlock x:Name="SupervisorTextBlock"  Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Margin="5" Text="Study program:" VerticalAlignment="Center" FontWeight="bold"/>
+        <TextBlock x:Name="StudyProgramTextBlock"  Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Margin="5" Text="Is full time study:" VerticalAlignment="Center" FontWeight="bold"/>
+        <TextBlock x:Name="FullTimeStudyTextBlock"  Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Margin="5" Text="Is external study:" VerticalAlignment="Center" FontWeight="bold"/>
+        <TextBlock x:Name="ExternalStudyTextBlock"  Grid.Row="5" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Grid.Row="6" Grid.Column="0" Margin="5" Text="Research type:" VerticalAlignment="Center" FontWeight="bold"/>
+        <TextBlock x:Name="ResearchTypeTextBlock"  Grid.Row="6" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Grid.Row="7" Grid.Column="0" Margin="5" Text="Description:" VerticalAlignment="top" FontWeight="bold"/>
+        <TextBox x:Name="DescriptionTextBox"  Grid.Row="7" Grid.Column="1" Margin="5" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True"/>
+
+        <TextBlock Grid.Row="8" Grid.Column="0" Margin="5" Text="Created:" VerticalAlignment="Center" FontWeight="bold"/>
+        <TextBlock x:Name="CreatedTextBlock"  Grid.Row="8" Grid.Column="1" Margin="5"/>
+
+        <Button Grid.Row="9" Grid.Column="1" Margin="5" Content="OK" Width="75" HorizontalAlignment="Right" Click="Ok_Click"/>
+    </Grid>
+</Window>
