@@ -101,7 +101,7 @@ namespace DissertationThemes.ImporterApp
                                 IsFullTimeStudy = record.IsFullTimeStudy,
                                 IsExternalStudy = record.IsExternalStudy,
                                 ResearchType = ResearchTypeConverter.FromSlovakString(record.ResearchType),
-                                Created = DateTime.Parse(record.Created),
+                                Created = DateTime.ParseExact(record.Created, "d.M.yyyy H:mm", CultureInfo.InvariantCulture),
                                 Supervisor = supervisor,
                                 StProgram = program
                             };
